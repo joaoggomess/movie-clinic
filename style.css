@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 4fr 1fr / 1fr 6fr;
+}
+
+.header {
+    grid-column: 2 / -1;
+    height: 2rem;
+    
+}
+
+.header > img {
+    width: 100%;
+}
+
+
+.content {
+    background-color: rgb(29, 58, 53);
+    color: white;
+}
+
+.content p {
+    text-align:justify;
+    font-size: small;
+    background-color: rgb(56, 73, 34);
+    border-radius: 3px;
+    padding: 2rem;
+}
+
+table {
+    font-size: small;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 5rem;
+}
+
+
+.buttons{
+    border-radius: 15px;
+    width: 5rem;
+    margin: auto;
+
+
+    background-color: rgba(255, 228, 196, 0.925);
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(72, 240, 30, 0.288) ;
+}
+
+tr:nth-child(even) {
+    background-color: #67806b;
+}
+
+tr:nth-child(odd) {
+    background-color: #094b14;
+}
+
+td {
+   padding: .3rem;
+}
+
+.footer {
+    grid-column: 2 / -1;
+
+    background-color: bisque;
+    
+}
+
+/*Side bar */
+
+.side-menu {
+    grid-row: 1 / span 3;
+    background-color: rgb(29, 58, 53);
+    border-right: 1px solid #c1f50410;
+}
+
+    /*Side bar list*/
+.side-menu > ul {
+    align-self: center;
+}
+
+        
+.side-menu > ul > li{
+    list-style: none;
+    text-align: center;
+    
+    width: 50%;
+    padding: 1rem; 
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+
+    background-color: rgba(255, 228, 196, 0.925);
+    border-radius: 10px;
+    box-shadow: 1px 1px rgba(72, 240, 30, 0.288) ;
+}
+
+.side-menu > ul > li:active{
+    position: relative;
+    top: .5px;
+}
+
+.link {
+    text-decoration: none;
+    color:rgb(235, 177, 69);
+    text-shadow: .5px .5px rgb(151, 104, 33);
+}
+
+
+
+/* I frame link for maps*/
+.mapouter{
+    position:relative;
+    text-align:right;
+    width: 150px;
+    height:65px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:150px;
+    height:65px;
+}
+.gmap_iframe {
+    width:150px!important;
+    height:65px!important;
+}
